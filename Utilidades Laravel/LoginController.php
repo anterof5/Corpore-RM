@@ -1,5 +1,5 @@
 <?php
-
+//Goutte é uum web scrapper para PHP.
 namespace App\Http\Controllers\PIT;
 
 //use GuzzleHttp\Client;
@@ -25,7 +25,7 @@ class LoginController extends Controller
 
     public function index(Request $request)
     {
-        //Parâmetros da URL
+        //Parâmetros da URL, baseados no portal antigo do RM. Para o novo portal, basta substituir os campos de entrada e URL.
         $client = new Client();
         $usuario = $request->usuario;
         $senha = $request->senha;
